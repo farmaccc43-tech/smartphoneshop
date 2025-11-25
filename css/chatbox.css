@@ -1,0 +1,90 @@
+/* Nút tròn */
+.chat-circle {
+    width: 60px;
+    height: 60px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 60px;
+    right: 25px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Box chat */
+.chat-box {
+    width: 300px;
+    height: 380px;
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.chat-header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Khung nội dung */
+.chat-content {
+    flex: 1;
+    padding: 8px;
+    overflow-y: auto;
+}
+
+.chat-content p {
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    max-width: 80%;
+}
+
+.chat-content .bot {
+    background: #f1f1f1;
+    align-self: flex-start;
+}
+
+.chat-content .user {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Input */
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    outline: none;
+}
+
+.chat-input button {
+    width: 50px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}

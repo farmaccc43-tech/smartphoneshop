@@ -33,11 +33,14 @@
 	<link rel="stylesheet" href="css/home_products.css">
 	<link rel="stylesheet" href="css/pagination_phantrang.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/chatbox.css">
 	<!-- js -->
 	<script src="data/products.js"></script>
 	<script src="js/classes.js"></script>
 	<script src="js/dungchung.js"></script>
 	<script src="js/trangchu.js"></script>
+	
+	
 
 </head>
 
@@ -107,6 +110,28 @@
 		<div class="contain-khungSanPham" ></div>
 
 	</section> <!-- End Section -->
+	<!-- Chat Button -->
+<div class="chat-circle" id="chatBtn">
+    💬
+</div>
+
+<!-- Chat Box -->
+<div class="chat-box" id="chatBox">
+    <div class="chat-header">
+        Hỗ Trợ Khách Hàng 📱
+        <span id="closeChat">✖</span>
+    </div>
+
+    <div class="chat-content" id="chatContent">
+        <p class="bot">Xin chào! Bạn cần hỗ trợ mua điện thoại loại nào?</p>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="userMessage" placeholder="Nhập tin nhắn...">
+        <button id="sendBtn">➤</button>
+    </div>
+</div>
+
 
 	<script>
 		addContainTaiKhoan(); addPlc();
@@ -116,5 +141,5 @@
 
 	<i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
 </body>
-
+<script src="js/chatbox.js"></script>
 </html>
